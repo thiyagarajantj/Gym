@@ -1,0 +1,30 @@
+.dash-nav-container{
+    width: 100vw;
+    height: 6.5vh;
+    background-color: white;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 3vw;
+    box-sizing: border-box;
+    background-color: var(--black);
+}
+.navbar{
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: x-large;
+    margin-left: 10px;
+    color: var(--red);
+}
+@media screen and (max-width:520px){
+    .navbar{
+        display: block;
+    }
+}

@@ -1,0 +1,159 @@
+.sidenav-container {
+  background-color: var(--red);
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 15vw;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 1vh;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.nav-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn {
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.nav-btn.active {
+  background-color: rgba(255, 255, 255, 0.244);
+  border-radius: 10px;
+}
+
+.lk {
+  text-decoration: none;
+}
+
+.nav-btn:active {
+  background-color: var(--white);
+  transition-duration: 0.3s;
+}
+
+.np1,.np1-1 {
+  width: 60px;
+}
+.np2 {
+  width: 10vw;
+  text-align: start;
+}
+
+.sum {
+  display: flex;
+}
+
+
+.logout-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-popup.active {
+  display: flex;
+}
+
+.logout-card {
+  background-color: white;
+  color: var(--black);
+  padding: 5vh 7vw;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.34);
+  text-align: center;
+}
+
+.clog1 {
+  padding: 10px 10px 0px 10px;
+}
+.clog2 {
+  padding: 0px 10px;
+}
+
+.clogbtn {
+  margin-top: 30px;
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clogbtn1 {
+  background-color: var(--black);
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+.clogbtn2 {
+  background-color: white;
+  color: var(--black);
+  padding: 5px 10px;
+  border: 1px solid var(--black);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 920px) {
+  .sidenav-container {
+    width: 200px;
+    margin: 20px;
+  }
+}
+
+
+.logout-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.45);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout-popup.active {  
+  display: flex;
+}
+
+
+@media screen and (max-width: 520px) {
+  .sidenav-container {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    width: 200px;
+    background-color: var(--red);
+    z-index: 1000;
+  }
+ .np1{
+    margin-left: -70px;
+ }
+  .sidenav-container.active {
+    display: flex;  
+  }
+  .logout-popup.active{
+    z-index: 1000;
+  }
+}
+

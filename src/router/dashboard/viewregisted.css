@@ -1,0 +1,129 @@
+.view-container {
+    width: 83vw;
+    height: 91vh;
+    overflow-X: hidden;
+    background-color: var(--white);
+    border-radius: 10px;
+
+}
+
+.view-container::-webkit-scrollbar {
+    display: none;
+}
+
+.view-b1 {
+    padding: 20px 30px 0px 30px;
+    width: 83vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: var(--black);
+}
+
+.b1-1 {
+    display: flex;
+    gap: 10px;
+    padding: 0px 30px;
+}
+
+.view-search {
+    width: 200px;
+    outline: none;
+    /* border: none; */
+    padding: 3px 5px;
+    border: 1px solid var(--black);
+}
+
+.del {
+    color: var(--red);
+    margin-right: 10px;
+}
+
+.view-b2 {
+    display: flex;
+    /* align-items: end; */
+    justify-content: end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.table {
+    height: 60vh;
+
+}
+.delpopup{
+    position: absolute;
+    top: 0.1vh;
+    width: 100vw;
+    height: 99.9vh;
+    background-color: rgba(0, 0, 0, 0.449);
+    display: none;
+}
+.delpopupactive{
+    display: block;
+}
+.del-card{
+    position: absolute;
+    top: 38vh;
+    left: 38vw;
+    background-color: white;
+    color: var(--black);
+    padding: 5vh 7vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.34);
+}
+.downloadpopup{
+    position: absolute;
+    top: 0.1vh;
+    width: 100vw;
+    height: 99.9vh;
+    background-color: rgba(0, 0, 0, 0.449);
+    display: none;
+}
+.downloadpopupactive{
+    display: block;
+}
+.download-card{
+    position: absolute;
+    top: 38vh;
+    left: 38vw;
+    background-color: white;
+    color: var(--black);
+    padding: 5vh 7vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.34);
+}
+@media screen and (max-width:520px) {
+    .view-container {
+        width: 99vw;
+    }
+
+    .del {
+        font-size: x-small;
+        margin-right: 0px;
+    }
+
+    .view-tittle {
+        font-size: x-small;
+    }
+    .view-b1{
+        width: 100vw;
+        padding: 10px 20px;
+    }
+    .b1-1{
+        margin-left: 20px;
+    }
+    .view-search{
+        width: 200px;
+    }
+    .table{
+        height: 90vh;
+    }
+    .del-card{
+        left: 20vw;
+    }
+    .download-card{
+        left: 20vw;
+    }
+}

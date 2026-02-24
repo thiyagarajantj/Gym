@@ -1,0 +1,215 @@
+.dfirst-container{
+    /* width: 83vw; */
+    /* height: 18vh; */
+}
+.dfirst-container{
+    width: 83vw;
+}
+.threebtn-cont{
+    background-color: var(--white);
+    box-sizing: border-box;
+    padding: 0.5vh;
+    height: 25vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.464);
+}
+.threebtn-1{
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    justify-content: center;
+    /* margin-bottom: 3vh; */
+}
+.dfbt1{
+    background-color: var(--black);
+    color: white;
+    padding: 3vh 5vw;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    box-sizing: border-box;
+}
+.new-icon{
+    padding-right: 5px;
+    /* align-items: ; */
+}
+.threebtn-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.dfbt2{
+    background-color: rgb(0, 206, 1);
+    color: white;
+    padding: 3.5vh 2vw;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    box-sizing: border-box;
+}
+.dfbt2active{
+    background-color: white;
+    color: green;
+    padding: 3.5vh 2vw;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    box-sizing: border-box;
+    border-bottom: 3px solid green;
+}
+.dfbt3{
+    background-color: var(--red);
+    color: white;
+    padding: 0vh 2vw;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    box-sizing: border-box;
+} 
+.dfbt3active{
+    background-color: white;
+    color: var(--red);
+    padding: 0vh 2vw;
+    border: none;
+    border-radius: 5px;
+    width: 25vw;
+    border-bottom: 3px solid var(--red);
+    box-sizing: border-box;
+}
+.tb2{
+    margin-top: 10px;
+    height: 70vh;
+    background-color: aqua;
+    width: 82vw;
+}
+.top{
+    height: 10vh;
+    width: 100vw;
+    background-color: blue;
+}
+.hr2{
+    margin: 1vh;
+}
+.profile-img{
+    height: 50px;
+    width: 50px;
+}
+.tb12{
+    overflow-x: hidden;
+    height: 64vh;
+    background-color: var(--white);
+    /* padding: 20px; */
+    box-sizing: border-box;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.286);
+}
+.tb12::-webkit-scrollbar{
+    display: none;
+}
+.tb12-tittle{
+    padding: 20px;
+    font-weight: 300;
+}
+.table{
+    width: 80vw;
+    height: 68vh;
+    /* margin: 1vh; */
+    overflow: scroll;
+    
+    color: rgb(61, 61, 61);
+    /* border-collapse: collapse; */
+    /* margin: 0px 10px; */
+    /* box-sizing: border-box; */
+    padding: 10px 50px;
+}
+.tbody{
+    height: 100px;
+    text-align: center;
+    
+}
+.profile-img{
+    height: 50px;
+    width: 50px;
+}
+.thead-tr{
+    background-color: white;
+}
+.thead-tr th{
+    padding: 5px;
+    border: 1px solid grey;
+    border-collapse: none;
+    font-weight: 500;
+}
+.tbody-tr{
+    margin: 30px 0px;
+   
+}
+.tbody-tr td{
+    background-color: white;
+    border: 1px solid grey;
+    font-weight: 400;
+    
+}
+.renewal-popup{
+    position: absolute;
+    top: 0.1vh;
+    width: 100vw;
+    height: 99.9vh;
+    background-color: rgba(0, 0, 0, 0.449);
+    display: none;
+}
+.renewal-popupactive{
+    display: block;
+}
+.renewal-card{
+    position: absolute;
+    top: 38vh;
+    left: 38vw;
+    background-color: white;
+    color: var(--black);
+    padding: 5vh 7vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.34);
+}
+@media screen and (max-width:850px) {
+    .dfbt1{
+        width: 200px;
+        font-size: x-small;
+        padding: 5px;
+    }
+    .dfbt2,.dfbt2active{
+        width: 250px;
+        font-size: x-small;
+        padding: 5px;
+    }
+    .dfbt3,.dfbt3active{
+        width: 250px;
+        font-size: x-small;
+    }
+}
+@media screen and (max-width:520px){
+    .dfirst-container{
+        width: 100vw;
+    }
+    .table{
+        padding: 2px;
+        font-size: x-small;
+        width: 100vw;
+    }
+    .thead-tr{
+        width: 80vw;
+    }
+    .profile-img{
+        height: 30px;
+        width: 30px;
+    }
+    .j1{
+        display: none;
+    }
+    .renewal-card{
+        left: 20vw;
+    }
+}

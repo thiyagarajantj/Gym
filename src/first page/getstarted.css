@@ -1,0 +1,95 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.get-container{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.get-started{
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    position: relative;
+}
+.get-nav{
+    position: absolute;
+    top: 4vh;
+    color: white;
+    left: 8vw;
+    display: flex;
+    gap: 10px;
+}
+.circle{
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+.get-box1{
+    background-color: white;
+    position: absolute;
+    top: 30vh;
+    width: 30vw;
+    left: 12vw;
+    background: transparent;
+    color: white;
+}
+.gs-tittle{
+    font-size:40px;
+    font-weight: 300;
+}
+
+.gs-p1{
+    margin-bottom: 5vh;
+}
+.gs-p2{
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+.gs-btn{
+    background-color: var(--red);
+    margin-top: 4vh;
+    padding: 10px 35px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.gs-btn:hover{
+    cursor: pointer;
+}
+.get-fotter{
+    position: absolute;
+    top: 90vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 2vw;
+}
+.get-icon{
+    /* background-color: white; */
+    color: var(--red);
+    /* padding: 2px; */
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    
+}
+.ic{
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+}
+@media screen and (max-width:690px) {
+    .get-box1{
+        width: 60vw;
+    }
+    .gs-p2{
+        font-size: smaller;
+    }
+}

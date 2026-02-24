@@ -1,0 +1,121 @@
+.forget-container{
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.forget-img{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.forget-card{
+    position: absolute;
+    border-radius: 20px;
+    background-color: white;
+    top: 20vh;
+    padding: 10vh 6vw;
+    left: 10vw;
+}
+.forget-detail{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    text-align: center;
+}
+.forget-tittle{
+    margin: 10px 0px 0px 0px;
+    font-size: x-large;
+}
+.forget-red-tittle{
+    font-size: x-small;
+    color: var(--red);
+    margin-bottom: 5vh;
+}
+.forget-input{
+    background-color: var(--white);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+.forget-btn{
+    background-color: var(--red);
+    color: white;
+    width: 7vw;
+    padding: 5px;
+    margin-top: 3vh;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+}
+.forget-btn:hover{
+    cursor: pointer;
+}
+.otp-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 3vw;
+}
+.otp-tittle{
+    margin-top: 5vh;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 300;
+}
+.otp-input-group{
+    display: flex;
+    gap: 20px;
+}
+.otp-input{
+    width: 2vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding-left: 5px;
+    /* box-sizing: border-box; */
+    margin-top: 5vh;
+}
+.otp-btn{
+    background-color: var(--red);
+    color: white;
+    width: 6vw;
+    margin-top: 4vh;
+    border: none;
+    align-items: ;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.otp-btn:hover{
+    cursor: pointer;
+}
+.otp-resend{
+    font-size: x-small;
+    padding: 10px;
+    color: var(--black);
+    font-weight: 300;
+}  
+@media screen and (max-width:780px) {
+    .otp-btn{
+        width: 12vw;
+    }
+}
+@media screen and (max-width:420px) {
+    .forget-card{
+        left: 8vw;
+    }
+    .forget-btn{
+        width: 20vw;
+    }
+    .otp-cont{
+        width: 65vw;
+    }
+    .otp-btn{
+        width: 20vw;
+    }
+    .otp-input{
+        width: 3vw;
+    }
+} 
+

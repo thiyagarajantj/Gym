@@ -1,0 +1,12 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+:root{
+  --red:rgb(224, 25, 54);
+  --black:rgb(36, 48, 64);
+  --white:rgb(241, 241, 241);
+}
