@@ -8,7 +8,7 @@ export const Dashnav = ({menu}) => {
     <div className='dash-nav-container'>
         <button className='navbar'onClick={menu} ><ViewListIcon/></button>
         <p className="nav-circle"></p>
-        <p className='nav-content'>Best Forces</p>
+        <p className='nav-content'>Beast Forces</p>
     </div>
     <div>
         

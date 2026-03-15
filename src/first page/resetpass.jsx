@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './resetpass.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import login from '../assets/gym-login.jpg';
-import { url2 } from './login';
-import axios from 'axios';
+import { auth } from '../firebaseConfig';
+import { confirmPasswordReset, sendPasswordResetEmail } from 'firebase/auth';
 
 export const Resetpass = () => {
     const location = useLocation();
@@ -37,8 +37,8 @@ export const Resetpass = () => {
         }
 
         try {
-            await axios.put(`${url2}/${email}, ${ password }`);
-            alert("Password reset successful!");
+            await sendPasswordResetEmail(auth, email);
+            alert("Password reset email sent!");
             navigate('/login');
         } catch (error) {
             console.error("Reset error:", error);
